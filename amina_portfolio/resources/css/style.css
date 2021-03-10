@@ -1,0 +1,461 @@
+/* Purple color #8480b8 */
+
+/* ------------------------------------*/
+/* BASIC SETUP */
+/* ------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #f7ebeb;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/* ------------------------------------*/
+/* REUSABLE COMPONENTS */
+/* ------------------------------------*/
+/* row will center everything */
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0; 
+}
+
+.box {
+    padding: 1%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%
+}
+
+.hoverable {
+  box-shadow: none;
+  transition: all 0.55s ease-in-out; 
+}
+
+.hoverable:hover {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.55s ease-in-out; 
+}
+
+/* ------------------------------------*/
+/* HEADING */
+/* ------------------------------------*/
+
+h1, 
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-break: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #8480b8;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+/* -------------------------------------*/
+/* PARAGRAPHS */
+/* -------------------------------------*/
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+/* -------------------------------------*/
+/* ICONS */
+/* -------------------------------------*/
+
+ion-icon {
+    font-size: 300%;
+    display: block;
+    color: #8480b8;
+    margin-bottom: 10px;
+}
+
+/* ------------------------------------*/
+/* BUTTONS */
+/* ------------------------------------*/
+
+.btn:link,
+.btn:visited,
+input[type=submit]{
+    position: absolute;
+    left: 15%;
+    display: inline-block;
+    padding: 5px 20px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]{
+    
+    background-color: #8480b8;
+    border:  1px solid #8480b8;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+    font-weight: 100;
+    background-color: #645fa6;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]{
+    border:  1px solid #645fa6;
+}
+
+/* ------------------------------------*/
+/* HEADER */
+/* ------------------------------------*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/computer3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.computer-text-box {
+    position:absolute;
+    width: 1140px;
+    top: 40%;
+    left: 3%;
+    transform: translate(0%, 0%);
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #8480b8;
+}
+
+/* ---------------------------- */
+/* FEATURE SECTION */
+/* ---------------------------- */
+
+.section-features {
+    color: #000;
+}
+
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+
+/* ---------------------------- */
+/* OUR SERVICES */
+/* ---------------------------- */
+
+.section-our-service {
+    background-color: rgba(132, 128, 184, 0.07);
+    color: #000;
+    padding: 0;
+    height: 400px;
+}
+
+.box-service {
+    height: 250px;
+}
+
+/* ------------------------------------*/
+/* OUR SERVICES SECTION BUTTONS - MAYBE WILL BE DELETED */
+/* ------------------------------------*/
+
+.service-btns {
+    margin-bottom: 50px;
+}
+
+.btn-service-1:link,
+.btn-service-1:visited{
+    left: 11%;
+    display: inline-block;
+    padding: 5px 20px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full-service-1:link,
+.btn-full-service-1:visited{
+    
+    background-color: #8480b8;
+    border:  1px solid #8480b8;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-service-1:hover,
+.btn-service-1:active {
+    font-weight: 100;
+    background-color: #645fa6;
+}
+
+.btn-full-service-1:hover,
+.btn-full-service-1:active{
+    border:  1px solid #645fa6;
+}
+
+/*  */
+
+.btn-service-2:link,
+.btn-service-2:visited{
+    left: 51%;
+    display: inline-block;
+    padding: 5px 20px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full-service-2:link,
+.btn-full-service-2:visited{
+    
+    background-color: #8480b8;
+    border:  1px solid #8480b8;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-service-2:hover,
+.btn-service-2:active {
+    font-weight: 100;
+    background-color: #645fa6;
+}
+
+.btn-full-service-2:hover,
+.btn-full-service-2:active{
+    border:  1px solid #645fa6;
+}
+
+.box a {
+    margin-top: 10px;
+    display: block;
+}
+
+.service-btn-box {
+    padding: 0;
+    margin-top: 0;
+}
+.service-btn-bottom-box {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+/* ------------------------------------*/
+/* CONTACT FORM */
+/* margin: 0 auto; to center an item in it's parent element
+/* ------------------------------------*/
+.section-form {
+    background-color: rgba(132, 128, 184, 0.07);
+    color: #000;
+    padding: 0;
+}
+
+.section-form .contact-form {
+    width: 60%;
+    margin: 0 auto;
+    color: #000;
+}
+
+.section-form h2 {
+    color: #000;
+}
+
+input[type=text]
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+.send-form {
+    
+    margin: auto 11%;
+}
+
+*:focus{outline:none;}
+
+
+/* ========================== */
+/* FOOTER */
+/* ========================== */
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links ion-icon {
+    display: block;
+    margin-right: 0;
+    width: 30px;
+    margin: 0;
+    height: 20px;
+    float: left;
+    text-align: center;
+    margin-top: 0px;
+    /*secrets to align text and icons */
+    line-height: 0%;
+    vertical-align: middle; 
+    margin-top: 0px;
+    color: #888;
+    font-size: 170%;
+}
+
+
+.facebook ion-icon,
+.twitter ion-icon,
+.google ion-icon,
+.instagram ion-icon {
+    transition: color: 0.2s;
+}
+
+.facebook ion-icon:hover {
+    color: #3b5998;
+}
+
+.twitter ion-icon:hover {
+    color: #00aced;
+}
+
+.google ion-icon:hover {
+    color: #dd4b39;
+}
+
+.instagram ion-icon:hover {
+    color: #517fa4;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 170%;
+    
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
