@@ -7,12 +7,7 @@
     
     .row { padding: 0 2%; }
     
-    header {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/computer3.jpg);
-        background-size: cover;
-        height: 100px;
-
-    }
+    
     
 }
 
